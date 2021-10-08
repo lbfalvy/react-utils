@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates and populates script div 1`] = `"<div id=\\"scripts\\" style=\\"display: none;\\"><script src=\\"a\\"></script><script src=\\"b\\"></script></div>"`;
+
+exports[`inserts new script without touching later one 1`] = `"<div id=\\"scripts\\" style=\\"display: none;\\"><script src=\\"a\\"></script><script src=\\"b\\"></script><script src=\\"c\\"></script></div>"`;

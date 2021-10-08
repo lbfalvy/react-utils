@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "target": "ES6",
+        "moduleResolution": "node",
+        "lib": [
+            "ES2020",
+            "DOM"
+        ],
+        "jsx": "react",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "skipLibCheck": true
+    }
+}
