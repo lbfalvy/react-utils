@@ -35,6 +35,11 @@ test('reloads with longer array', () => {
     expect(cb).toHaveBeenCalledTimes(2)
 })
 
+test('reloads with item changing type', () => {
+    act(() => component.update(<Mock v={[1, '2']} cb={cb} />))
+    expect(cb).toHaveBeenCalledTimes(2)
+})
+
 test('reloads on changing back', () => {
     act(() => component.update(<Mock v={[1, 3]} cb={cb} />))
     act(() => component.update(<Mock v={[1, 2]} cb={cb} />))
