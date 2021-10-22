@@ -1,6 +1,6 @@
 {
   "name": "@lbfalvy/react-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A set of small utilities for react that I needed at least twice in the past",
   "keywords": [
     "classList",
