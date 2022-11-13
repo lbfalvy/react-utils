@@ -5,7 +5,7 @@ twice in the past
 
 ## classList
 
-This is an ominous function, it appears in one form or another in nearly 
+This is an omnipresent function, it appears in one form or another in nearly 
 every React project because conditionally applying classes is incredibly
 common. This variant can be called with logical expressions and returns a
 well-formatted class list composed of those entries that evaluated to a
