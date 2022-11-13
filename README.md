@@ -58,7 +58,7 @@ Returns a tuple containing the current window dimensions. Since this is
 unlikely to change a lot, it's easier this way than with the complicated
 approach taken by usePointer
 
-## status
+# Status
 
 Everything has automatic tests except [usePointer] and
 [useWindowDimensions] because I couldn't figure out how to test them.
