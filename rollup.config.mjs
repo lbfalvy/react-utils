@@ -3,12 +3,10 @@ import commonjs from "@rollup/plugin-commonjs";
 import ts from 'rollup-plugin-ts';
 import dts from 'rollup-plugin-dts';
 import { dirname } from 'path';
-
-const pkg = require("./package.json")
+import pkg from './package.json' assert { type: "json" };
 
 const baseConfig = {
-    input: 'src/index.ts',
-    preserveModules: true
+    input: 'src/index.ts'
 }
 
 export default [{
@@ -16,11 +14,13 @@ export default [{
     output: [{
         dir: dirname(pkg.main),
         format: 'cjs',
-        sourcemap: 'inline'
+        sourcemap: 'inline',
+        preserveModules: true
     }, {
         dir: dirname(pkg.module),
         format: 'esm',
-        sourcemap: 'inline'
+        sourcemap: 'inline',
+        preserveModules: true
     }],
     plugins: [
         peerDepsExternal(), // React
@@ -31,7 +31,8 @@ export default [{
     ...baseConfig,
     output: {
         dir: dirname(pkg.types),
-        format: 'esm'
+        format: 'esm',
+        preserveModules: true
     },
     plugins: [dts()]
 }]
