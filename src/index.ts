@@ -6,3 +6,4 @@ export { useChangingHandle } from './useChangingHandle'
 export { usePointer } from './usePointer'
 export { useScripts } from './useScripts'
 export { useWindowDimensions } from './useWindowDimensions'
+export { useVariable } from "./useVariable";

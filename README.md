@@ -58,6 +58,10 @@ Returns a tuple containing the current window dimensions. Since this is
 unlikely to change a lot, it's easier this way than with the complicated
 approach taken by usePointer
 
+## useVariable
+
+Read the value of a `@lbfalvy/mini-events` variable, and automatically rerender when it changes. This is a very small hook, but there are a few gotchas that I got wrong repeatedly in the past which ultimately justified adding it here with a test suite.
+
 # Status
 
 Everything has automatic tests except [usePointer] and
